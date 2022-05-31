@@ -1,9 +1,11 @@
+import ViewCategoryProduct from "../components/viewCategoryProduct.js/viewCategoryProduct";
+
 const HomePage = () => {
   return (
     <>
-      <h1>
-        HOME
-      </h1>
+      <main className="w-full flex justify-start">
+        <ViewCategoryProduct />
+      </main>
     </>
   );
 }

@@ -18,8 +18,8 @@ const Navbar = () => {
   const inLocation = navigate.find(loc => loc.path === location.pathname)
 
   return (
-    <header className="mx-2">
-      <nav className="md:h-[calc(100vh-2rem)] rounded-lg md:sticky md:top-4 md:w-[0px] md:px-8 md:py-4 md:w-50px md:flex-col fixed top-2 right-2 w-[calc(100%-1rem)] flex justify-between items-center py-5 px-2 bg-blue-500 text-white">
+    <header className="md:mx-2 z-30">
+      <nav className="md:h-[calc(100vh-1rem)] md:rounded-lg md:sticky md:top-2 md:w-auto md:px-4 md:py-4 md:w-50px md:flex-col fixed top-0 right-0 w-full flex justify-between items-center py-4 px-2 bg-blue-500 dark:bg-zinc-900 border-2 border-blue-600 dark:border-zinc-600 text-white">
         <div className=" flex items-center justify-start md:flex-col">
           <BiUser className="text-2xl w-10 h-10 p-2 rounded-md hover:bg-[rgba(255,255,255,0.2)] cursor-pointer" />
         </div>

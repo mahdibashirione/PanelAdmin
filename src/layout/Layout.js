@@ -2,13 +2,12 @@ import Navbar from "../components/Navbar/Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col md:flex-row container min-h-screen">
-      <div className=""></div>
+    <section className="flex flex-col md:flex-row container min-h-screen">
       <Navbar />
-      <div className="w-full bg-red-200 p-4 h-[1000px] mt-[100px] md:mt-0">
+      <div className="w-full py-2 px-4 h-[1000px] dark:bg-zinc-800">
         {children}
       </div>
-    </div>
+    </section>
   );
 }
 
