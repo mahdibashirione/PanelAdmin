@@ -1,9 +1,16 @@
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import HomePage from "./page/HomePage";
+import CategoryPage from "./page/CategoryPage";
+import AddProductPage from "./page/AddProductPage";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/Categories" element={<CategoryPage />} />
+      <Route path="/AddProduct" element={<AddProductPage />} />
+    </Routes>
   );
 }
 
