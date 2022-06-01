@@ -26,6 +26,7 @@ const ViewCategoryProduct = () => {
           </div>
         )
       })}
+
     </section>
   );
 }

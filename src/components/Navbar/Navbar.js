@@ -5,6 +5,7 @@ import { BiLogOut } from "react-icons/bi"
 import { AiOutlineFolderAdd } from "react-icons/ai"
 import { useState } from "react"
 import { useLocation, NavLink } from "react-router-dom"
+import MobileBar from "../mobileBar/MobileBar";
 
 const Navbar = () => {
 
@@ -33,6 +34,7 @@ const Navbar = () => {
           <BiLogOut className="text-2xl w-10 h-10 p-2 rounded-md hover:bg-[rgba(255,255,255,0.2)] cursor-pointer" />
         </div>
       </nav>
+      <MobileBar />
     </header >
   );
 }
