@@ -3,7 +3,7 @@ import ViewCategoryProduct from "../components/viewCategoryProduct.js/viewCatego
 const HomePage = () => {
   return (
     <>
-      <main className="w-full flex justify-start">
+      <main className="w-full flex justify-start py-20">
         <ViewCategoryProduct />
       </main>
     </>
