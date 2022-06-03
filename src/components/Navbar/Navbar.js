@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <header className="md:mx-2 z-30">
-      <nav className="md:h-[calc(100vh-1rem)] md:rounded-lg md:sticky md:top-2 md:w-auto md:px-4 md:py-4 md:w-50px md:flex-col fixed top-0 right-0 w-full flex justify-between items-center py-4 px-2 bg-blue-500 dark:bg-zinc-900 border-2 border-blue-600 dark:border-zinc-600 text-white">
+      <nav className="md:h-[calc(100vh-1rem)] dark:border-0 md:rounded-lg md:sticky md:top-2 md:w-auto md:px-4 md:py-4 md:w-50px md:flex-col fixed top-0 right-0 w-full flex justify-between items-center py-4 px-2 bg-blue-500 dark:bg-zinc-900 border-2 border-blue-600 dark:border-zinc-600 text-white">
         <div className=" flex items-center justify-start md:flex-col">
           <BiUser className="text-2xl w-10 h-10 p-2 rounded-md hover:bg-[rgba(255,255,255,0.2)] cursor-pointer" />
         </div>
