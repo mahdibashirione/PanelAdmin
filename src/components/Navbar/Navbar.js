@@ -10,6 +10,7 @@ import MobileBar from "../mobileBar/MobileBar";
 const Navbar = () => {
 
   const location = useLocation()
+
   const [navigate, setNavigate] = useState([
     { path: '/', label: "Home" },
     { path: '/Categories', label: "Categories" },
@@ -29,7 +30,7 @@ const Navbar = () => {
           <NavLink to="/"><BiHomeAlt className={`${inLocation.path === "/" ? "text-zinc-900 bg-slate-100" : "hover:bg-[rgba(255,255,255,0.2)]"} cursor-pointer text-2xl w-10 h-10 p-2 rounded-md`} /></NavLink>
           <NavLink to="/Categories"><BiCategory className={`${inLocation.path === "/Categories" ? "text-zinc-900 bg-slate-100" : "hover:bg-[rgba(255,255,255,0.2)]"} cursor-pointer text-2xl w-10 h-10 p-2 rounded-md`} /></NavLink>
         </ul>
-        <span className="md:hidden text-lg select-none">Panel</span>
+        <span className="md:hidden text-lg select-none">{inLocation.label}</span>
         <div className=" flex items-center justify-end md:flex-col">
           <BiLogOut className="text-2xl w-10 h-10 p-2 rounded-md hover:bg-[rgba(255,255,255,0.2)] cursor-pointer" />
         </div>
