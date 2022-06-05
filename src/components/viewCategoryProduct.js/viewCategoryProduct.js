@@ -5,28 +5,27 @@ import { } from "react-icons/ai"
 const ViewCategoryProduct = () => {
 
   const [category, setCategory] = useState([
-    { name: "Digital", value: 126, color: "bg-rose-500", icon: "#icon" },
-    { name: "Sports", value: 150, color: "bg-lime-500", icon: "#icon" },
-    { name: "Console Game", value: 35, color: "bg-purple-500", icon: "#icon" },
-    { name: "Kitchen", value: 450, color: "bg-yellow-500", icon: "#icon" }
+    { name: "Digital", value: 126, icon: "#icon" },
+    { name: "Sports", value: 150, icon: "#icon" },
+    { name: "Console Game", value: 35, icon: "#icon" },
+    { name: "Kitchen", value: 450, icon: "#icon" }
   ])
 
   return (
-    <section className="w-full grid grid-cols-1 bg- md:grid-cols-2 lg:grid-cols-4 gap-2 ">
+    <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 ">
       {category.map(item => {
         return (
-          <div className={`${item.color} cursor-pointer hover:translate-y-2 relative duration-200 rounded-xl py-6 px-4 flex gap-x-2 items-center justify-start`}>
+          <div className="cursor-pointer bg-gradient-to-br from-purple-600 to-blue-400 text-white dark:text-slate-800 dark:bg-[rgba(255,255,255,0.6)] shadow-sm dark:shadow-white relative duration-200 rounded-xl py-6 px-4 flex gap-x-2 items-center justify-start">
             <span>
               {item.icon}
             </span>
-            <div>
-              <span className="text-md font-sans">{item.name}</span>
+            <div className="mr-4">
+              <span className="text-lg font-sans font-bold ">{item.name}</span>
               <p className="text-md font-sans">{item.value} +</p>
             </div>
           </div>
         )
       })}
-
     </section>
   );
 }

@@ -7,11 +7,13 @@ import Layout from './layout/Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Layout>
-        <App />
-      </Layout>
-    </BrowserRouter>
-  </React.StrictMode>
+  <div className='w-screen bg-gray-100 dark:bg-zinc-700'>
+    <React.StrictMode>
+      <BrowserRouter>
+        <Layout>
+          <App />
+        </Layout>
+      </BrowserRouter>
+    </React.StrictMode>
+  </div>
 );
